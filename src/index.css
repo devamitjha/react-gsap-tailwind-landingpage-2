@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Prism&family=Train+One&family=Zen+Tokyo+Zoo&display=swap');
+@import "tailwindcss";
+
+@theme{
+  --font-title-1: "Tilt Prism", sans-serif;
+  --font-title-2: "Train One", system-ui;
+  --font-title-3: "Zen Tokyo Zoo", system-ui;
+  --font-title-4: "Fredericka the Great", serif;
+  --font-title-5: "Monoton", sans-serif;
+  --font-body: "Poppins", sans-serif;
+   --color-orange: #fd4018;
+   --color-dark-black:#1a1b1f;
+   --color-light-black:#1f2024;
+   --color-light-gray:#272729;
+}
+
+html,
+body {
+    width: 100%;
+    background-color: white;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+@utility flex-center {
+    @apply flex justify-center items-center;
+}
+
+@utility col-center {
+    @apply flex flex-col justify-center items-center;
+}
+
+@utility abs-center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+@layer components {
+    main {
+        @apply w-full overflow-x-hidden;
+    }
+    nav{
+        a {
+            @apply cursor-pointer text-nowrap text-lg hover:text-orange transition-all ease-in-out duration-200;
+        }
+        li + li{
+            @apply ml-4;
+        }
+    }
+}
