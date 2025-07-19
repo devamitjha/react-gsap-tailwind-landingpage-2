@@ -81,8 +81,8 @@ function App() {
 
           {/* Right Side */}
           <div className="flex w-[40%] bg-dark-black relative">
-            <div className="image-container flex w-full overflow-hidden pt-8 pr-8 pl-8">
-              <img src={Hero} alt="hero" className="w-full h-full object-contain mix-blend-color-dodge" />
+            <div className="image-container flex w-full overflow-hidden pt-8 pr-8 pl-8 mix-blend-color-dodge">
+              <img src={Hero} alt="hero" className="w-full h-full object-contain" />
             </div>
 
             <div className="btn-next w-12 h-12 flex items-center justify-center bg-orange text-white absolute bottom-1/4 right-1/5 rounded-md cursor-pointer">
